@@ -93,6 +93,7 @@ max-height: 90%; */
 	text-align: center;
 	max-width: 75%;
 	width: 500px;
+	height: 150px;
 	max-height: 20%;
 	margin: 10px auto;
 	display: flex;
