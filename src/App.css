@@ -140,10 +140,10 @@ max-height: 90%; */
 	border-radius: 10px;
 	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 	padding: 10px 30px;
-	margin: 10px auto;
+
 	font-size: 12px;
 	cursor: pointer;
-	margin: 10px auto 25%;
+	margin: 10px auto 40%;
 }
 .finish-container {
 	display: flex;
