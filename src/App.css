@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+* {
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #686de0;
+	font-family: 'roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	padding: 20px;
+}
+h1 {
+	font-size: 60px;
+}
+table,
+td,
+th {
+	border: 1px solid;
+	padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+	margin: 0 auto;
+	width: 30%;
+	border-collapse: collapse;
+}
+.table-score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.homePage-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.homepage-btnstart {
+	background-color: #9f68e0;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 14px 40px;
+	margin: 10px auto;
+	font-size: 16px;
+	cursor: pointer;
+}
+.homepage-btnstart:active {
+	transform: scale(0.98);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homepage-btnstart:focus {
+	outline: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.homepage-btn-table {
+	background-color: #b7ce36;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 10px 30px;
+	margin: 10px auto;
+	font-size: 12px;
+	cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homepage-input {
+	height: 40px;
+}
+.pg-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+}
+.pg-bord {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 50px 20px;
+	text-align: center;
+	max-width: 75%;
+	width: 500px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+.pg-card {
+	font-size: 80px;
+	margin: 0 0 0 80px;
+}
+.pg-name {
+	font-size: 25px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.pg-score {
+	font-size: 18px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.pg-round {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px 30%;
+	font-size: 75px;
+	border: outline;
+	border-radius: 50%;
+	padding: 30px 65px;
+	background-color: rgb(36, 156, 160);
+}
+.pg-round-text {
+	font-size: 25px;
+}
+.pg-btn-next {
+	background-color: #a82296;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 10px 30px;
+	margin: 10px auto;
+	font-size: 12px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+.finish-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+.finish-winorlose {
+	font-size: 150px;
+}
+.finish-score {
+	font-size: 45px;
+}
+.finish-btn-again {
+	background-color: #381c9b;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 10px 30px;
+	margin: 10px auto;
+	font-size: 12px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+.finish-btn-close {
+	background-color: #fff;
+	color: #381c9b;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 10px 30px;
+	margin: 10px auto;
+	font-size: 12px;
+	cursor: pointer;
+	margin: 10px auto;
 }
