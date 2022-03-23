@@ -82,8 +82,8 @@ table {
 	align-items: center;
 	text-align: center;
 	position: relative;
-	max-width: 90%;
-	max-height: 90%;
+	/*max-width: 90%;
+max-height: 90%; */
 }
 .pg-bord {
 	background-color: #fff;
@@ -93,6 +93,7 @@ table {
 	text-align: center;
 	max-width: 75%;
 	width: 500px;
+	max-height: 20%;
 	margin: 10px auto;
 	display: flex;
 	flex-direction: row;
@@ -141,7 +142,7 @@ table {
 	margin: 10px auto;
 	font-size: 12px;
 	cursor: pointer;
-	margin: 10px auto;
+	margin: 10px auto 25%;
 }
 .finish-container {
 	display: flex;
