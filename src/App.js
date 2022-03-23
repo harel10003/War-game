@@ -25,7 +25,7 @@ function App() {
 	};
 
 	const tablePlayers = (s, p) => {
-		// debugger;
+		debugger;
 		console.log(s > 0 ? 'win' : 'lose', s);
 		let tempPlayers = players;
 		let flag = 0;
