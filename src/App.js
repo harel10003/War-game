@@ -25,7 +25,6 @@ function App() {
 	};
 
 	const tablePlayers = (s, p) => {
-		console.log(s > 0 ? 'win' : 'lose', s);
 		let tempPlayers = players;
 		let flag = 0;
 		let i;
@@ -35,9 +34,7 @@ function App() {
 				if (s > 0) tempPlayers[i].win++;
 				else tempPlayers[i].lose = tempPlayers[i].lose + 1;
 				setPlayers([...tempPlayers]);
-
 				flag = 1;
-				console.log('in');
 				break;
 			}
 		}
@@ -47,7 +44,6 @@ function App() {
 			else p.lose = 1;
 			setPlayers([...tempPlayers, p]);
 		}
-		console.log('loop');
 	};
 	const palyAgin = (num, p) => {
 		setPage(num);
@@ -90,15 +86,15 @@ function App() {
 				/>
 			);
 		} else if (page === 3) {
-			if (score > 0) {
-				player.win++;
-				com.lose++;
-			} else {
-				com.win++;
-				player.lose++;
-			}
-			com.games++;
-			player.games++;
+			// 	if (score > 0) {
+			// 		player.win++;
+			// 		com.lose++;
+			// 	} else {
+			// 		com.win++;
+			// 		player.lose++;
+			// 	}
+			// 	com.games++;
+			// 	player.games++;
 			return (
 				<Finish
 					score={score}
